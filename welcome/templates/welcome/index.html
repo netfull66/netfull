@@ -1,0 +1,743 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>NetFull</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i" rel="stylesheet">
+
+<!-- CSS Files -->
+<link rel="stylesheet" href="{% static 'assets/css/iconfont.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/slick/slick.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/slick/slick-theme.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/jquery.fancybox.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+
+<!-- For Plugins external CSS -->
+<link rel="stylesheet" href="{% static 'assets/css/plugins.css' %}" />
+
+<!-- Theme Custom CSS -->
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+<!-- Theme Responsive CSS -->
+<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+
+    <script src="{% static 'assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+    <div class='preloader'>
+        <div class='loaded'>&nbsp;</div>
+    </div>
+    <div class="culmn">
+        <header id="main_menu" class="header navbar-fixed-top">
+            <div class="main_menu_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="nave_menu">
+                            <nav class="navbar navbar-default">
+                                <div class="container-fluid">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="#home">
+                                            <img src="{% static 'assets/images/netfull-bg.png' %}" style="width: 130px; height: 100px;" />
+                                        </a>
+                                    </div>
+
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="#home">HOME</a></li>
+                                            <li><a href="#feature">FEATURES</a></li>
+                                            <li><a href="#history">ABOUT US</a></li>
+                                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                                            <li><a href="#team">TEAM</a></li>
+                                            <li><a href="#contact">CONTACT</a></li>
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+        <!--End of header -->
+
+
+
+
+        <!--home Section -->
+        <section id="home" class="home">
+            <div class="overlay">
+                <div class="home_skew_border">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <div class="main_home_slider text-center">
+                                    <div class="single_home_slider">
+                                        <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                            <h3>Our Clients Are Our First Priority</h3>
+                                            <h1>WELCOME TO NETFULL</h1>
+                                            <div class="separator"></div>
+<p>Netfull is a web development company specializing in Django and Flask. Comprising a team of skilled programmers, we are committed to building functional, user-friendly websites that deliver high-quality web solutions tailored to meet our clients' needs.</p>
+                                            <div class="home_btn">
+                                                <a href="#contact" class="btn btn-lg m_t_10">Contact Us</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                  
+
+                                   
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrooldown">
+                        <a href="#feature"><i class="fa fa-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of home section -->
+
+
+        <!--feature section -->
+        <section id="feature" class="feature sections">
+            <div class="container">
+                <div class="row">
+                    <div class="main_feature text-center">
+
+                        <div class="col-sm-3">
+                            <div class="single_feature">
+                                <div class="single_feature_icon">
+                                    <i class="fa fa-clone"></i>
+                                </div>
+                    
+                                <h4>SLEEK DESIGN</h4>
+                                <div class="separator3"></div>
+                                <h5>Our user-centric designs ensure a visually appealing and seamless experience, combining functionality with style.</h5>
+                            </div>
+                        </div>
+                    
+                        <div class="col-sm-3">
+                            <div class="single_feature">
+                                <div class="single_feature_icon">
+                                    <i class="fa fa-heart-o"></i>
+                                </div>
+                    
+                                <h4>CLEAN CODE</h4>
+                                <div class="separator3"></div>
+                                <h5>We write efficient, well-documented, and maintainable code to deliver reliable and high-performing solutions.</h5>
+                            </div>
+                        </div>
+                    
+                        <div class="col-sm-3">
+                            <div class="single_feature">
+                                <div class="single_feature_icon">
+                                    <i class="fa fa-lightbulb-o"></i>
+                                </div>
+                                <h4>CREATIVE IDEAS</h4>
+                                <div class="separator3"></div>
+                                <h5>Innovative and fresh ideas tailored to meet your unique needs, helping your projects stand out.</h5>
+                            </div>
+                        </div>
+                    
+                        <div class="col-sm-3">
+                            <div class="single_feature">
+                                <div class="single_feature_icon">
+                                    <i class="fa fa-comments-o"></i>
+                                </div>
+                    
+                                <h4>FREE SUPPORT</h4>
+                                <div class="separator3"></div>
+                                <h5>Enjoy dedicated and responsive customer support to assist you with any questions or challenges you face.</h5>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+            <!--End of container -->
+        </section>
+        <!--End of feature Section -->
+        <hr />
+
+
+        <!-- History section -->
+        <section id="history" class="history sections">
+            <div class="container">
+                <div class="row">
+                    <div class="main_history">
+                        <div class="col-sm-6">
+                            <div class="single_history_img">
+                                <img src="{% static 'assets/images/stab1.png' %}" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="single_history_content">
+                                <div class="head_title">
+                                    <h2>OUR HISTORY</h2>
+                                </div>
+                                <h5>At Netfull, we started with a small team of passionate developers and grew into a thriving web development company. From the very beginning, our focus on creating intuitive, high-performance websites using powerful frameworks like Django and Flask has allowed us to consistently deliver quality solutions to clients across a wide range of industries. As we continue to grow and evolve, we remain deeply committed to innovation, functionality, and providing exceptional user experiences, ensuring that our solutions are always aligned with the latest trends and technologies in the web development world.</h5>
+                                <a href="" class="btn btn-lg">BROWSE OUR WORK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of row -->
+            </div>
+            <!--End of container -->
+        </section>
+        <!--End of history -->
+
+
+        <!-- service Section -->
+<section id="service" class="service">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main_service">
+                <div class="col-md-6 col-sm-12 no-padding">
+
+                    <div class="single_service single_service_text text-right">
+                        <div class="head_title">
+                            <h2>OUR TECHNOLOGIES</h2>
+                        </div>
+
+                        <div class="row">
+                            <!-- First Service: AI Integration -->
+                            <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+                                        <article class="single_service_right_text">
+                                            <h4>AI INTEGRATION</h4>
+                                            <p>We embed AI models into our websites and products to enhance functionality and user experience. From personalized recommendations to advanced analytics, our AI-driven solutions take your business to the next level.</p>
+                                        </article>
+                                    </div>
+                                    <div class="col-sm-1 col-xs-1">
+                                        <figure class="single_service_icon">
+                                            <i class="fa fa-cogs"></i>
+                                        </figure><!-- End of figure -->
+                                    </div>
+                                </div>
+                            </div><!-- End of col-sm-12 -->
+
+                            <!-- Second Service: UX/UI Design -->
+                            <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+                                        <article class="single_service_right_text">
+                                            <h4>UX/UI DESIGN</h4>
+                                            <p>Our team excels in crafting seamless and user-friendly interfaces. We ensure that every aspect of the design, from layout to navigation, is optimized for the best user experience, making your website both functional and visually appealing.</p>
+                                        </article>
+                                    </div>
+                                    <div class="col-sm-1 col-xs-1">
+                                        <figure class="single_service_icon">
+                                            <i class="fa fa-paint-brush"></i>
+                                        </figure><!-- End of figure -->
+                                    </div>
+                                </div>
+                            </div><!-- End of col-sm-12 -->
+
+                            <!-- Third Service: Custom Web Development -->
+                            <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+                                        <article class="single_service_right_text">
+                                            <h4>CUSTOM WEB DEVELOPMENT</h4>
+                                            <p>We specialize in building custom websites tailored to your needs using frameworks like Django and Flask. Our development process ensures scalability, security, and performance, delivering websites that are both robust and easy to maintain.</p>
+                                        </article>
+                                    </div>
+                                    <div class="col-sm-1 col-xs-1">
+                                        <figure class="single_service_icon">
+                                            <i class="fa fa-cogs"></i>
+                                        </figure><!-- End of figure -->
+                                    </div>
+                                </div>
+                            </div><!-- End of col-sm-12 -->
+
+                        </div>
+                    </div>
+                </div><!-- End of col-sm-6 -->
+
+                <div class="col-md-6 col-sm-12 no-padding">
+                    <figure class="single_service single_service_img">
+                        <div class="overlay-img"></div>
+                        <img src="{% static 'assets/images/servicerightimg.jpg' %}" alt="" />
+                    </figure><!-- End of figure -->
+                </div><!-- End of col-sm-6 -->
+
+            </div>
+        </div><!-- End of row -->
+    </div><!-- End of Container-fluid -->
+</section><!-- End of service Section -->
+
+
+        <!-- Start off Work Section -->
+        <section id="portfolio" class="portfolio sections">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="main_portfolio">
+                        <div class="col-sm-12">
+                            <div class="head_title text-center">
+                                <h2>RECENT WORKS</h2>
+                                <div class="subtitle">
+                                    It has survived not only five centuries, but also the leap scrambled it to make a
+                                    type.
+                                </div>
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                        <div class="work_menu text-center">
+                            <div id="filters" class="toolbar mb2 mt2">
+                                <button class="btn-md fil-cat filter active" data-filter="all">ALL</button>/
+                                <button class="btn-md fil-cat filter" data-rel="web" data-filter=".web">WEB
+                                    DESIGN</button>/
+                                <button class="btn-md fil-cat filter" data-rel="design" data-filter=".design">PRINT
+                                    DESIGN</button>/
+                                <button class="btn-md fil-cat filter" data-rel="flyers"
+                                    data-filter=".flyers">ANIMATION</button>/
+                                <button class="btn-md fil-cat filter" data-rel="bcards"
+                                    data-filter=".bcards">ART</button>/
+                                <button class="btn-md fil-cat filter" data-rel="photo"
+                                    data-filter=".photo">PHOTOGRAPHY</button>/
+                                <button class="btn-md fil-cat filter" data-rel="video"
+                                    data-filter=".video">VIDEO</button>
+                            </div>
+
+                        </div>
+
+                        <div style="clear:both;"></div>
+                        <div id="portfoliowork">
+                            <div class="single_portfolio tile scale-anm web grid-item-width2 video">
+                                <img src="{% static 'assets/images/pf1.jpg' %}" alt="" />
+                                <a href="{% static 'assets/images/pf1.jpg' %}" class="portfolio-img">
+                                    <div class="grid_item_overlay">
+                                        <div class="separator4"></div>
+                                        <h3>LMS</h3>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single_portfolio tile scale-anm bcards photo">
+                                <img src="{% static 'assets/images/pf2.jpg' %}" alt="" />
+                                <a href="{% static 'assets/images/pf2.jpg' %}" class="portfolio-img">
+                                    <div class="grid_item_overlay">
+                                        <div class="separator4"></div>
+                                        <h3>CHEAKIFY</h3>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single_portfolio tile scale-anm web video">
+                                <img src="{% static 'assets/images/pf3.jpg' %}" alt="" />
+                                <a href="{% static 'assets/images/pf3.jpg' %}" class="portfolio-img">
+                                    <div class="grid_item_overlay">
+                                        <div class="separator4"></div>
+                                        <h3>NATURELISM</h3>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single_portfolio tile scale-anm web photo">
+                                <img src="{% static 'assets/images/pf4.jpg' %}" alt="" />
+                                <a href="{% static 'assets/images/pf4.jpg' %}" class="portfolio-img">
+                                    <div class="grid_item_overlay">
+                                        <div class="separator4"></div>
+                                        <h3>Fast API</h3>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                                <div class="single_portfolio tile scale-anm bcards design">
+                                    <img src="{% static 'assets/images/pf5.jpg' %}" alt="" />
+                                    <a href="{% static 'assets/images/pf5.jpg' %}" class="portfolio-img">
+                                        <div class="grid_item_overlay">
+                                            <div class="separator4"></div>
+                                            <h3>Blog</h3>
+                                            <p></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="single_portfolio tile scale-anm flyers video design">
+                                    <img src="{% static 'assets/images/pf6.jpg' %}" alt="" />
+                                    <a href="{% static 'assets/images/pf6.jpg' %}" class="portfolio-img">
+                                        <div class="grid_item_overlay">
+                                            <div class="separator4"></div>
+                                            <h3>AI Call Centre</h3>
+                                            <p></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="single_portfolio tile scale-anm photo flyers">
+                                    <img src="{% static 'assets/images/pf7.jpg' %}" alt="" />
+                                    <a href="{% static 'assets/images/pf7.jpg' %}" class="portfolio-img">
+                                        <div class="grid_item_overlay">
+                                            <div class="separator4"></div>
+                                            <h3>Recipes</h3>
+                                            <p></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="single_portfolio tile scale-anm bcards video">
+                                    <img src="{% static 'assets/images/pf8.jpg' %}" alt="" />
+                                    <a href="{% static 'assets/images/pf8.jpg' %}" class="portfolio-img">
+                                        <div class="grid_item_overlay">
+                                            <div class="separator4"></div>
+                                            <h3>Library</h3>
+                                            <p></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                        </div>
+
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div><!-- End off container -->
+        </section> <!-- End off Work Section -->
+
+
+
+        <!-- Study Section -->
+        <section id="study" class="study text-center wow fadeIn" data-wow-duration="2s" data-wow-dealy="1.5s">
+            <div class="container">
+                <div class="row">
+                    <div class="main_study_area sections">
+                        <div class="head_title text-center">
+                            <h2>CHECKIFY</h2>
+                            <div class="subtitle">
+                                Think it. Plan it. Checkify it.
+                            </div>
+                            <div class="separator"></div>
+                        </div>
+                        <div class="single_study_content">
+                            <div class="col-sm-6">
+                                <div class="single_study_slid_area">
+
+                                    <div class="single_study_text">
+                                        <div class="study_slider">
+                                            <div class="item">
+                                                <div class="s_study_icon">
+                                                    <i class="fa fa-lightbulb-o"></i>
+                                                </div>
+                                                <h4>OUR LATEST PRODUCT - CHECKIFY</h4>
+                                                <div class="separator3"></div>
+                                                <h5>Checkify is an advanced business management platform that uses AI to assign tasks based on employee profiles and performance. It offers features like project management, role-based access, and team collaboration, helping businesses operate more efficiently.</h5>
+                                            </div>
+                                            <div class="item">
+                                                <div class="s_study_icon">
+                                                    <i class="fa fa-lightbulb-o"></i>
+                                                </div>
+                                                <h4>CHECKIFY - AI-POWERED TASK ASSIGNMENT</h4>
+                                                <div class="separator3"></div>
+                                                <h5>Checkify uses AI to intelligently assign tasks based on employee profiles, roles, and feedback. The platform enables seamless project management, role-based access, and team collaboration, optimizing workflow efficiency and productivity.</h5>
+                                            </div>
+                                            
+                                            <div class="item">
+                                                <div class="s_study_icon">
+                                                    <i class="fa fa-lightbulb-o"></i>
+                                                </div>
+                                                <h4>CHECKIFY - TEAM COLLABORATION</h4>
+                                                <div class="separator3"></div>
+                                                <h5>Checkify enables smooth collaboration between teams, allowing them to share files, track progress, and communicate effectively within the platform, fostering a productive work environment.</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="single_study_right_img">
+                                <div class="col-sm-6">
+                                    <div class="single_study_img">
+                                        <img src="{% static 'assets/images/study.jpg' %}" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End off row -->
+            </div><!-- End off Container -->
+        </section><!-- End off Study Section -->
+
+
+        <!-- Team Section -->
+        <section id="team" class="team">
+            <div class="main_team_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="head_title textwhite text-center margin-top-80">
+                                <h2>OUR TEAM</h2>
+                                <div class="subtitle">
+                                    Meet the craziest team. Share your thoughts with them.
+                                </div>
+                                <div class="separator"></div>
+                            </div><!-- End off Head_title -->
+
+                            <div class="main_team">
+                                <ul>
+                                    <li>
+                                        <div class="single_team_img">
+                                            <img src="{% static 'assets/images/team11.jpg' %}" alt="" />
+                                        </div>
+                                        <div class="single_team_text">
+                                            <h4>Ibrahim Fakhry</h4>
+                                            <p>Founder & Chief Executive Officer</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single_team_img">
+                                            <img src="{% static 'assets/images/team22.jpg' %}" alt="" />
+                                        </div>
+                                        <div class="single_team_text">
+                                            <h4>Zyad Wael</h4>
+                                            <p>Engineering Director</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single_team_img">
+                                            <img src="{% static 'assets/images/team33.jpg' %}" alt="" />
+                                        </div>
+                                        <div class="single_team_text">
+                                            <h4>Sohila Mohamed</h4>
+                                            <p>Lead Designer & Creative Specialist</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single_team_img">
+                                            <img src="{% static 'assets/images/team44.jpg' %}" alt="" />
+                                        </div>
+                                        <div class="single_team_text">
+                                            <h4>Ahmad Waheed</h4>
+                                            <p>Head of Marketing & Strategy</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single_team_img">
+                                            <img src="{% static 'assets/images/team55.jpg' %}" alt="" />
+                                        </div>
+                                        <div class="single_team_text">
+                                            <h4>Ahmad Wael</h4>
+                                            <p>Senior Web Developer</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single_team_img">
+                                            <img src="{% static 'assets/images/team66.jpg' %}" alt="" />
+                                        </div>
+                                        <div class="single_team_text">
+                                            <h4>Yamen Hegazy</h4>
+                                            <p>Operations Manager</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+
+                        </div><!-- End of main team contant -->
+                    </div>
+                </div><!-- End of container -->
+            </div>
+        </section><!-- End off Team Section -->
+
+
+        
+
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="contact_contant sections">
+                            <div class="head_title text-center">
+                                <h2>kEEP IN TOUCH</h2>
+                                <div class="subtitle">
+                                    Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum
+                                    quam nec.
+                                </div>
+                                <div class="separator"></div>
+                            </div><!-- End off Head_title -->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="main_contact_info">
+                                        <div class="row">
+                                            <div class="contact_info_content padding-top-90 padding-bottom-60 p_l_r">
+                                                <div class="col-sm-12">
+                                                    <div class="single_contact_info">
+                                                        <div class="single_info_text">
+                                                            <h3>CALL US</h3>
+                                                            <h4>+20 114 587 1860</h4>
+                                                            <h4>+20 102 141 6862</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="single_contact_info">
+                                                        <div class="single_info_text">
+                                                            <h3>EMAIL US</h3>
+                                                            <h4>netfull66@gmail.com</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="single_contant_left padding-top-90 padding-bottom-90">
+                                        <form action="{% url 'send_email' %}" method="post" id="formid">
+                                            {% csrf_token %}
+                                            <div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="name" placeholder="First Name" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" name="message" rows="7" placeholder="Message"></textarea>
+                                                </div>
+                                                <div class="">
+                                                    <input type="submit" value="SEND MESSAGE" class="btn btn-lg">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End of contact section -->
+
+       
+
+        <!--Footer section-->
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="main_footer">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="flowus">
+                                        <a href="https://www.facebook.com/profile.php?id=61561751296406"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/netfull1/"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="copyright_text">
+                                        <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i
+                                                class="fa fa-heart"></i> by <a
+                                                href="https://bootstrapthemes.co">NetFull</a>2025. All Rights
+                                            Reserved</p>
+                                    </div>
+
+                                   
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End off footer Section-->
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+ <!-- START SCROLL TO TOP  -->
+<div class="scrollup">
+    <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<script src="{% static 'assets/js/vendor/jquery-1.11.2.min.js' %}"></script>
+<script src="{% static 'assets/js/vendor/bootstrap.min.js' %}"></script>
+
+<script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+<script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'assets/js/jquery.masonry.min.js' %}"></script>
+
+<!-- slick slide js -->
+<script src="{% static 'assets/css/slick/slick.js' %}"></script>
+<script src="{% static 'assets/css/slick/slick.min.js' %}"></script>
+
+<script src="{% static 'assets/js/plugins.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+
+</body>
+
+</html>
