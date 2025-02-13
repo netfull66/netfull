@@ -1,352 +1,697 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Net Full</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-        <title>Checkify</title>
+  <!-- Favicons -->
+  {% load static %}
 
-        <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Favicon and Apple Touch Icon -->
+  <link href="{% static 'assets/img/clients/img_1.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+  
 
-        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+<body class="index-page">
 
-        <link href="static/css/bootstrap-icons.css" rel="stylesheet">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-        <link href="static/css/templatemo-ebook-landing.css" rel="stylesheet">
-<!--
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="../assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Netfull</h1>
+      </a>
 
-TemplateMo 588 ebook landing
-
-https://templatemo.com/tm-588-ebook-landing
-
--->
-    </head>
-    
-    <body>
-
-        <main>
-
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="/">
-                        <img src="static/images/netfull-bg.png" alt="Logo" class="navbar-logo" style="height: 100px;">
-                    </a>
-                    
-
-                    <div class="d-lg-none ms-auto me-3">
-                        <a href="#" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                            <i class="btn-icon bi-cloud-download"></i>
-                            <span>Download</span><!-- duplicated another one below for mobile -->
-                        </a>
-                    </div>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-auto me-lg-4">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_1">Home</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">The Book</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">Author</a>
-                            </li>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#pricing">Pricing</a></li>
 
 
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                            </li>
-                        </ul>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-                        <!-- <div class="d-none d-lg-block">
-                            <a href="#" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                                <i class="btn-icon bi-cloud-download"></i>
-                                <span>Download</span>
-                            </a>
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Better Solutions For Your Business</h1>
+            <p>We are team of talented programmers making websites</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Get Started</a>
+              <a href="/discover_more" class="btn-watch-video d-flex align-items-center">
+                <i class="bi bi-search"></i>
+                <span>Discover More</span>
+            </a>
                         </div>
-                    </div> -->
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="">
+                      </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide"><img src="{% static 'assets/img/clients/img.png' %}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{% static 'assets/img/clients/img_1.png' %}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{% static 'assets/img/clients/Checkify-removebg-preview.png' %}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{% static 'assets/img/clients/img.png' %}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{% static 'assets/img/clients/img_1.png' %}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{% static 'assets/img/clients/Checkify-removebg-preview.png' %}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{% static 'assets/img/clients/img.png' %}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{% static 'assets/img/clients/img_1.png' %}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{% static 'assets/img/clients/Checkify-removebg-preview.png' %}" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            Checkify is an advanced business management platform that uses AI to assign tasks based on employee profiles and performance. It offers features like project management, role-based access, and team collaboration, helping businesses operate more efficiently.
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">Checkify uses AI to intelligently assign tasks based on employee profiles, roles, and feedback. The platform enables seamless project management, role-based access, and team collaboration, optimizing workflow efficiency and productivity.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us light-background" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+  <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+    <h3><span>Meet the </span><strong>Net Full Team</strong></h3>
+    <p>
+      We are a passionate team of developers dedicated to delivering high-quality full-stack solutions. Our expertise spans web development, AI integration, and dynamic applications.
+    </p>
+  </div>
+
+  <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+    <div class="faq-item faq-active">
+      <h3><span>01</span> Who are we?</h3>
+      <div class="faq-content">
+        <p>Net Full is a team of skilled developers specializing in full-stack development, AI, and innovative web applications.</p>
+      </div>
+      <i class="faq-toggle bi bi-chevron-right"></i>
+    </div><!-- End Faq item-->
+
+    <div class="faq-item">
+      <h3><span>02</span> What do we focus on?</h3>
+      <div class="faq-content">
+        <p>We build dynamic and scalable applications, integrating advanced technologies like TensorFlow and AI to enhance user experiences.</p>
+      </div>
+      <i class="faq-toggle bi bi-chevron-right"></i>
+    </div><!-- End Faq item-->
+
+    <div class="faq-item">
+      <h3><span>03</span> Why choose Net Full?</h3>
+      <div class="faq-content">
+        <p>We prioritize innovation, performance, and seamless user interactions, ensuring that our solutions meet the highest standards of development.</p>
+      </div>
+      <i class="faq-toggle bi bi-chevron-right"></i>
+    </div><!-- End Faq item-->
+
+  </div>
+</div>
+
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="{% static 'assets/img/why-us.png' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+                      </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="{% static 'assets/img/skills.png' %}" class="img-fluid" alt="">
+                      </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <h3>Our Skills</h3>
+
+
+            <div class="skills-content skills-animation">
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-            </nav>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Django</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Services Section -->
+<section id="services" class="services section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>Providing innovative solutions with cutting-edge technology and development expertise.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="" class="stretched-link">Full-Stack Development</a></h4>
+          <p>Building robust, scalable, and secure web applications tailored to business needs.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+          <h4><a href="" class="stretched-link">AI & Machine Learning</a></h4>
+          <p>Integrating AI solutions like TensorFlow to enhance automation and decision-making.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+          <h4><a href="" class="stretched-link">Web & Mobile Solutions</a></h4>
+          <p>Creating user-friendly websites and mobile apps with a focus on performance.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-check2-square icon"></i></div>
+          <h4><a href="" class="stretched-link">Checkify</a></h4>
+          <p>A modern to-do app designed for efficient task management, helping individuals and teams streamline their workflow.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+  </div>
+
+</section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="{% static 'assets/img/cta-bg.jpg' %}" alt="">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+  <div class="col-xl-9 text-center text-xl-start">
+    <h3>🚀 Take Your Business to the Next Level!</h3>
+    <p>At <strong>Net Full</strong>, we specialize in (web development, AI integration, and digital solutions) to help you succeed. Whether you're launching a new project or scaling an existing one, our expert team is ready to assist. Let’s build something amazing together!</p>
+  </div>
+  <div class="col-xl-3 cta-btn-container text-center">
+    <a class="cta-btn align-middle" href="#">Get Started Now</a>
+  </div>
+</div>
+
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Portfolio Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Meet our passionate web app development team, dedicated to crafting innovative, user-friendly, and high-performance digital solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic">    <img src="{% static 'assets/img/team/team-77.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ibrahim Fakhry</h4>
+                <span>Founder & Chief Executive Officer</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/team22.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Zyad Wael</h4>
+                <span>Engineering Director</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/team55.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ahmad Wael</h4>
+                <span>Senior Web Developer</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/team44.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ahmad Waheed</h4>
+                <span>Head of Marketing & Strategy</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/team33.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sohila Mohamed</h4>
+                <span>Lead Designer & Creative Specialist</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/team66.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Yamen Hegazy</h4>
+                <span>Operations Manager</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/team77.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ahmad Ramy</h4>
+                <span>Full stack Developer</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+<section id="pricing" class="pricing section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Checkify Pricing</h2>
+    <p>Choose the perfect plan to stay organized and boost your productivity.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Free Plan -->
+      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="pricing-item">
+          <h3>Free Plan</h3>
+          <h4>0<span><sup>EGP</sup>/ month</span></h4>
+          <ul>
+            <li><i class="bi bi-check"></i> <span>Personal task Management (No Team)</span></li>
+            <li><i class="bi bi-check"></i> <span>Create & track personal tasks</span></li>
+            <li><i class="bi bi-check"></i> <span>Single User</span></li>
+            <li class="na"><i class="bi bi-x"></i> <span>Team Collaboration</span></li>
+            <li class="na"><i class="bi bi-x"></i> <span>Projects</span></li>
+          </ul>
+          <a href="#" class="buy-btn">Get Started</a>
+        </div>
+      </div><!-- End Free Plan -->
+
+      <!-- Pro Plan -->
+      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="pricing-item featured">
+          <h3>Pro Plan</h3>
+          <h4>199<span><sup>EGP</sup> / month</span></h4>
+          <ul>
+            <li><i class="bi bi-check"></i> <span>All Free Features</span></li>
+            <li><i class="bi bi-check"></i> <span>Create & Manage 1 Project</span></li>
+            <li><i class="bi bi-check"></i> <span>Assign & Track tasks</span></li>
+            <li><i class="bi bi-check"></i> <span>Unlimited File uploads</span></li>
+            <li><i class="bi bi-check"></i> <span>Role-Based Team Management</span></li>
+            <li><i class="bi bi-check"></i> <span>Project progress tracking</span></li>
+          </ul>
+          <a href="#" class="buy-btn">Upgrade to Pro</a>
+        </div>
+      </div><!-- End Pro Plan -->
+
+      <!-- Team Plan -->
+      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="pricing-item">
+          <h3>Business Plan</h3>
+          <h4>399<span><sup>EGP</sup> / month</span></h4>
+          <ul>
+            <li><i class="bi bi-check"></i> <span>All Pro Features</span></li>
+            <li><i class="bi bi-check"></i> <span>Create multiple Projects</span></li>
+            <li><i class="bi bi-check"></i> <span>Manage multiple teams & roles</span></li>
+            <li><i class="bi bi-check"></i> <span>Full Business insights & reports</span></li>
+            <li><i class="bi bi-check"></i> <span>AI workload balancing</span></li>
+            <li><i class="bi bi-check"></i> <span>Advanced analytics</span></li>
+            <li><i class="bi bi-check"></i> <span>Custom project templates</span></li>
+            <li><i class="bi bi-check"></i> <span>Live chat Support</span></li>
+
+          </ul>
+          <a href="#" class="buy-btn">Start for Teams</a>
+        </div>
+      </div><!-- End Team Plan -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Pricing Section -->
+
+
+    <!-- Faq 2 Section -->
+    <section id="faq-2" class="faq-2 section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="faq-container">
+
+  <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+    <i class="faq-icon bi bi-question-circle"></i>
+    <h3>How long have you been programming?</h3>
+    <div class="faq-content">
+      <p>3 years ago.</p>
+    </div>
+    <i class="faq-toggle bi bi-chevron-right"></i>
+  </div><!-- End Faq item-->
+
+  <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+    <i class="faq-icon bi bi-question-circle"></i>
+    <h3>What languages do you use?</h3>
+    <div class="faq-content">
+      <p>Python, CSS, JavaScript, and HTML.</p>
+    </div>
+    <i class="faq-toggle bi bi-chevron-right"></i>
+  </div><!-- End Faq item-->
+
+  <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+    <i class="faq-icon bi bi-question-circle"></i>
+    <h3>Which frameworks do you use?</h3>
+    <div class="faq-content">
+      <p>Django and Flask.</p>
+    </div>
+    <i class="faq-toggle bi bi-chevron-right"></i>
+  </div><!-- End Faq item-->
+
+</div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq 2 Section -->
+
+    <!-- Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             
+            <form action="{% url 'send_newsletter_email' %}" method="post" class="php-email-form">
+              {% csrf_token %}
+              <div class="newsletter-form">
+                <input type="email" name="email" required>
+                <input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container footer-top">
+  <div class="row gy-4">
+    <div class="col-lg-4 col-md-6 footer-about">
+      <a href="index.html" class="d-flex align-items-center">
+        <span class="sitename">Net Full</span>
+      </a>
+      <div class="footer-contact pt-3">
+        <p>Nasr City, Cairo</p>
+        <p>Egypt</p>
+        <p class="mt-3"><strong>Phone:</strong> <span>+20 100 000 0000</span></p>
+        <p><strong>Email:</strong> <span>netfull66@gmail.com</span></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 footer-links">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">About Us</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <div class="col-lg-2 col-md-3 footer-links">
+      <h4>Our Services</h4>
+      <ul>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">AI Integration</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+      </ul>
+    </div>
+
+    <div class="col-lg-4 col-md-12">
+      <h4>Follow Us</h4>
+      <p>Stay updated with our latest projects and services!</p>
+      <div class="social-links d-flex">
+        <a href="https://www.facebook.com/profile.php?id=61561751296406"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/netfull1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Netfull</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">AMS Team</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  
+</body>
 
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12 mb-5 pb-5 pb-lg-0 mb-lg-0">
-
-                            <h6>Introducing App</h6>
-
-                            <h1 class="text-white mb-4">Checkify Web App</h1>
-
-                            <a href="#section_2" class="btn custom-btn smoothscroll me-3">Discover More</a>
-
-                            <a href="#section_3" class="link link--kale smoothscroll">Meet the Author</a>
-                        </div>
-
-                        <div class="hero-image-wrap col-lg-6 col-12 mt-3 mt-lg-0">
-                            <img src="static/images/Welcome To Checkify.png" 
-                                 alt="education online books" 
-                                 style="width: 300px; height: auto;">
-                        </div>
-                        
-                        
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="featured-section">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-8 col-12">
-                            <div class="avatar-group d-flex flex-wrap align-items-center">
-                                <img src="static/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" class="img-fluid avatar-image" alt="">
-                                <img src="static/images/avatar/team55.jpg" class="img-fluid avatar-image" alt="">
-                                
-                                <img src="static/images/avatar/portrait-young-redhead-bearded-male.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
-
-
-                                <img src="static/images/avatar/studio-portrait-emotional-happy-funny-smiling-boyfriend.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
-
-                                <img src="static/images/avatar/team33.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
-                                <img src="static/images/avatar/pretty-blonde-woman.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="py-lg-5"></section>
-
-
-            <section class="book-section section-padding" id="section_2">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <img src="static/images/tablet-screen-contents.png" class="img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="book-section-info">
-                                <h6>Modern &amp; Creative</h6>
-
-
-                                <h2 class="mb-4">About The App</h2>
-
-                                <p>Checkify is an advanced business management platform that uses AI to assign tasks based on employee profiles and performance. It offers features like project management, role-based access, and team collaboration, helping businesses operate more efficiently.</p>
-
-                                <p>Checkify uses AI to intelligently assign tasks based on employee profiles, roles, and feedback. The platform enables seamless project management, role-based access, and team collaboration, optimizing workflow efficiency and productivity.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section>
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12 text-center">
-                            <h6>What's inside?</h6>
-
-                            <h2 class="mb-5">Preview at glance</h2>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
-                                <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link smoothscroll" href="#item-1">Introduction</a>
-
-
-                                    <a class="nav-link smoothscroll" href="#item-3">Chapter 1: <strong>AI Integration</strong></a>
-
-                                    <a class="nav-link smoothscroll" href="#item-4">Chapter 2: <strong>UX/UI Design</strong></a>
-
-                                    <a class="nav-link smoothscroll" href="#item-5">Chapter 3: <strong>Custom Web Development</strong></a>
-                                </nav>
-                            </nav>
-                        </div>
-
-                        <div class="col-lg-8 col-12">
-                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-                                <div class="scrollspy-example-item" id="item-1">
-                                    <h5>Introducing App</h5>
-
-                                    <p>At Netfull, we started with a small team of passionate developers and grew into a thriving web development company. From the very beginning, our focus on creating intuitive, high-performance websites using powerful frameworks like Django and Flask has allowed us to consistently deliver quality solutions to clients across a wide range of industries. As we continue to grow and evolve, we remain deeply committed to innovation, functionality, and providing exceptional user experiences, ensuring that our solutions are always aligned with the latest trends and technologies in the web development world.</p>
-                                </div>
-
-                                <div class="scrollspy-example-item" id="item-3">
-                                    <h5>Ai Integration</h5>
-
-                                    <p>We embed AI models into our websites and products to enhance functionality and user experience. From personalized recommendations to advanced analytics, our AI-driven solutions take your business to the next level.</p>
-                                    <div class="col-lg-6 col-12">
-                                        <img src="static/images/ai.png" class="img-fluid" alt="">
-                                    </div>
-                                    </div>
-                                    
-                                </div>
-
-                                <div class="scrollspy-example-item" id="item-4">
-                                    <h5>UX/UI Design</h5>
-
-                                    <p>Our team excels in crafting seamless and user-friendly interfaces. We ensure that every aspect of the design, from layout to navigation, is optimized for the best user experience, making your website both functional and visually appealing.</p>
-
-                                    <img src="static/images/ui.png" class="scrollspy-example-item-image img-fluid mb-3" alt="">
-
-                                </div>
-
-                                <div class="scrollspy-example-item" id="item-5">
-                                    <h5>CUSTOM WEB DEVELOPMENT</h5>
-
-                                    <p>We specialize in building custom websites tailored to your needs using frameworks like Django and Flask. Our development process ensures scalability, security, and performance, delivering websites that are both robust and easy to maintain.</p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="author-section section-padding" id="section_3">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <img src="static/images/avatar/portrait-young-redhead-bearded-male.jpg" class="author-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                            <h6>Meet Author</h6>
-
-                            <h2 class="mb-4">Eng. Ibrahim</h2>
-
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-
-            <section class="contact-section section-padding" id="section_5">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-5 col-12 mx-auto">
-                            <form class="custom-form ebook-download-form bg-white shadow" action="/send_email/" method="post" role="form">
-                                
-                                {% csrf_token %}
-
-                                <div class="text-center mb-5">
-                                    <h2 class="mb-1">Contact Us</h2>
-                                </div>
-                                <div class="ebook-download-form-body">
-                                    <div class="input-group mb-4">
-                                        <input type="text" name="name" id="ebook-form-name" class="form-control" aria-label="ebook-form-name" aria-describedby="basic-addon1" placeholder="Your Name" required>
-
-                                        <span class="input-group-text" id="basic-addon1">
-                                            <i class="custom-form-icon bi-person"></i>
-                                        </span>
-                                    </div>
-
-                                    <div class="input-group mb-4">
-                                        <input type="email" name="email" id="ebook-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@company.com" aria-label="ebook-form-email" aria-describedby="basic-addon2" required="">
-
-                                        <span class="input-group-text" id="basic-addon2">
-                                            <i class="custom-form-icon bi-envelope"></i>
-                                        </span>
-                                    </div>
-
-                                    <div class="input-group mb-4">
-                                        <input type="text" name="subject" id="ebook-subject" class="form-control" placeholder="Subject" aria-label="ebook-form-email" aria-describedby="basic-addon2" required>
-
-                                        <span class="input-group-text" id="basic-addon2">
-                                            <i class="custom-form-icon bi-envelope"></i>
-                                        </span>
-                                    </div>
-                                    <div class="input-group mb-4">
-                                        <input type="text" name="message" id="ebook-message" class="form-control" placeholder="Message" aria-label="ebook-form-email" aria-describedby="basic-addon2" required>
-
-                                        <span class="input-group-text" id="basic-addon2">
-                                            <i class="custom-form-icon bi-envelope"></i>
-                                        </span>
-                                    </div>
-                                    <div class="col-lg-8 col-md-10 col-8 mx-auto">
-                                        <button type="submit" class="form-control">Send</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <h6 class="mt-5">Say hi and talk to us</h6>
-
-                            <h2 class="mb-4">Contact</h2>
-
-
-                            <p class="mb-2">
-                                <a href="tel: 01145871860" class="contact-link">
-                                    01145871860
-                                </a>
-                            </p>
-
-                            <p>
-                                <a href="netfull66@gmail.com" class="contact-link">
-                                    netfull66@gmail.com
-                                </a>
-                            </p>
-
-                            <h6 class="site-footer-title mt-5 mb-3">Social</h6>
-
-                            <ul class="social-icon mb-4">
-                                <li class="social-icon-item">
-                                    <a href="https://www.instagram.com/netfull1/" class="social-icon-link bi-instagram"></a>
-                                </li>
-
-                                
-                                <li class="social-icon-item">
-                                    <a href="https://www.facebook.com/profile.php?id=61561751296406" class="social-icon-link bi-facebook"></a>
-                                </li>
-
-                            </ul>
-
-                            <p class="copyright-text">Net Full 2025. All Rights Reserved
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- JAVASCRIPT FILES -->
-        <script src="static/js/jquery.min.js"></script>
-        <script src="static/js/bootstrap.bundle.min.js"></script>
-        <script src="static/js/jquery.sticky.js"></script>
-        <script src="static/js/click-scroll.js"></script>
-        <script src="static/js/custom.js"></script>
-
-    </body>
 </html>

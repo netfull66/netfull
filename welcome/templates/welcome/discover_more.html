@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Slide Navigator - Checkify</title>
+
+    <style>
+
+.footer-section {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Ensure full width coverage */
+}
+
+.footer-section .container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-section .row {
+    justify-content: center;
+}
+
+.footer-section .site-footer-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section .contact-link {
+    color: var(--dark-color);
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-section .social-icon {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-icon {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-icon-link {
+    color: var(--dark-color);
+    font-size: 1.5em;
+}
+
+        :root {
+            --white-color: #ffffff;
+            --primary-color: #E76F51;
+            --secondary-color: #E9C46A;
+            --section-bg-color: #f0f8ff;
+            --custom-btn-bg-color: #F4A261;
+            --custom-btn-bg-hover-color: #E76F51;
+            --dark-color: #000000;
+            --p-color: #717275;
+            --link-hover-color: #E76F51;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 200px; /* Adjust this value based on your navbar height */
+            font-family: Arial, sans-serif;
+            background-color: var(--section-bg-color);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Vertical slider */
+        .vertical-slider {
+            width: 250px;
+            background-color: var(--white-color);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        .slide-thumbnail {
+            padding: 20px;
+            margin-bottom: 15px;
+            background-color: var(--section-bg-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .slide-thumbnail:hover {
+            transform: translateX(10px);
+            border-color: var(--secondary-color);
+        }
+
+        .slide-thumbnail.active {
+            border-color: var(--primary-color);
+            background-color: var(--white-color);
+        }
+
+        .main-slide {
+    flex: 0 0 60%; /* Changed from flex:1 */
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-height: 450px; /* Reduced from 200px */
+    max-width: 600px; /* Added max-width constraint */
+}
+
+.slide-heading {
+    color: var(--primary-color);
+    font-size: 1.5em; /* Reduced from 1.8em */
+    margin-bottom: 12px; /* Reduced from 15px */
+}
+
+.slide-content {
+    color: var(--p-color);
+    font-size: 0.9em; /* Reduced from 1em */
+    line-height: 1.4; /* Reduced from 1.6 */
+    padding: 8px; /* Added padding reduction */
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+        /* Scrollbar styling */
+        .vertical-slider::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .vertical-slider::-webkit-scrollbar-thumb {
+            background-color: var(--custom-btn-bg-color);
+            border-radius: 4px;
+        }
+
+        .vertical-slider::-webkit-scrollbar-thumb:hover {
+            background-color: var(--custom-btn-bg-hover-color);
+        }
+        .navbar-toggler {
+    border: none;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23434343' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+    </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+<link href="{% static 'css/templatemo-ebook-landing.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+<main>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'images/netfull-bg.png' %}" alt="Logo" class="navbar-logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_2">Our App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_3">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_5">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+<main>
+
+    <!-- Navbar -->
+    
+
+    <div class="container">
+        <!-- Vertical Slider -->
+        <div class="vertical-slider">
+            <div class="slide-thumbnail active" onclick="showSlide(1)">
+                <h3>Overview</h3>
+                <p>Learn about Checkify</p>
+            </div>
+            <div class="slide-thumbnail" onclick="showSlide(2)">
+                <h3>Task Management</h3>
+                <p>Organize and manage tasks</p>
+            </div>
+            <div class="slide-thumbnail" onclick="showSlide(3)">
+                <h3>Business Features</h3>
+                <p>Handle businesses and projects</p>
+            </div>
+            <div class="slide-thumbnail" onclick="showSlide(4)">
+                <h3>Messaging Center</h3>
+                <p>Communicate and collaborate</p>
+            </div>
+            <div class="slide-thumbnail" onclick="showSlide(5)">
+                <h3>AI Assistance</h3>
+                <p>AI-generated emails and terms</p>
+            </div>
+            <div class="slide-thumbnail" onclick="showSlide(6)">
+                <h3>Free vs Pro</h3>
+                <p>Understand the differences</p>
+            </div>
+            <div class="slide-thumbnail" onclick="showSlide(7)">
+                <h3>User Feedback</h3>
+                <p>Provide and review feedback</p>
+            </div>
+        </div>
+
+        <!-- Main Slide Content -->
+        <div class="main-slide" id="main-slide">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+
+    <footer class="footer-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <h6 class="site-footer-title mb-3">Contact</h6>
+                    <p class="mb-2">
+                        <a href="tel: 01145871860" class="contact-link">
+                            01145871860
+                        </a>
+                    </p>
+                    <p>
+                        <a href="netfull66@gmail.com" class="contact-link">
+                            netfull66@gmail.com
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <h6 class="site-footer-title mb-3">Social</h6>
+                    <ul class="social-icon mb-4">
+                        <li class="social-icon-item">
+                            <a href="https://www.instagram.com/netfull1/" class="social-icon-link bi-instagram"></a>
+                        </li>
+                        <li class="social-icon-item">
+                            <a href="https://www.facebook.com/profile.php?id=61561751296406" class="social-icon-link bi-facebook"></a>
+                        </li>
+                    </ul>
+                    <p class="copyright-text">Net Full 2025. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</main>
+    <script>
+        // Slide content data
+        const slides = [
+        {
+        title: "Overview",
+        content: `
+            Checkify is a modern to-do app designed to help you manage tasks efficiently.<br>
+            From personal task management to professional project handling,<br>
+            Checkify streamlines your workflow.<br>
+            It offers tools to plan, prioritize, and track your tasks easily.<br>
+            Designed for individuals and teams alike.
+        `,
+        image: "../static/images/checkify.jpg"
+    },
+            {
+                title: "Task Management",
+                content: "With Checkify, you can create and organize tasks effortlessly.<br>Assign tasks to users and track their progress with ease.<br>Our intuitive interface simplifies task prioritization.<br>AI-powered tools make task creation seamless and smart.<br>Manage your tasks with confidence and clarity."
+           
+                ,image: "../static/images/tasks.jpg"
+            },
+            {
+                title: "Business Features",
+                content: "Pro users can create businesses and projects efficiently.<br>Assign tasks to team members and track their completion.<br>Each project allows you to organize tasks in detail.<br>Collaborate effectively with tools designed for teamwork.<br>Achieve your business goals with Checkify's advanced features."
+            
+            ,image: "../static/images/business.jpg"
+            
+            },
+            {
+                title: "Messaging Center",
+                content: "Stay connected with your team using our messaging center.<br>Send and receive messages in real time for seamless communication.<br>AI can generate professional emails based on your input.<br>Collaborate on projects and tasks through instant messaging.<br>Simplify your workflow with integrated communication tools."
+            
+                ,image: "../static/images/team.jpg"
+            
+            },
+            {
+                title: "AI Assistance",
+                content: "Leverage AI to generate terms and emails efficiently.<br>AI simplifies task descriptions and project outlines.<br>Save time with AI-driven automation for daily operations.<br>Ensure clarity and professionalism in all communications.<br>Maximize productivity with Checkify's AI tools."
+           
+           ,image: "../static/images/project.jpg"
+           
+            },
+            {
+                title: "Free vs Pro",
+                content: "Free users can use Checkify as a personal to-do list.<br>Even without logging in, basic task management is available.<br>Pro users unlock advanced features for businesses and teams.<br>Access AI-generated terms and project management tools.<br>Choose the plan that fits your needs best."
+           
+           ,image: "../static/images/users.jpg"
+           
+            },
+            {
+                title: "User Feedback",
+                content: "Assigned users can review and update their tasks.<br>Upload files and provide feedback on task progress.<br>Task owners can accept or reject submissions with comments.<br>Ensure quality with clear feedback loops for tasks.<br>Streamline task management and collaboration easily."
+            
+            ,image: "../static/images/users2.jpg"
+            
+            }
+            
+        ];
+
+        function showSlide(slideNumber) {
+    // Update thumbnails
+    const thumbnails = document.querySelectorAll('.slide-thumbnail');
+    thumbnails.forEach(thumb => thumb.classList.remove('active'));
+    thumbnails[slideNumber - 1].classList.add('active');
+
+    // Update main slide content
+    const mainSlide = document.getElementById('main-slide');
+    const slideData = slides[slideNumber - 1];
+    
+    mainSlide.innerHTML = `
+        <h1 class="slide-heading">${slideData.title}</h1>
+        <div class="slide-content">
+            ${slideData.content}
+            ${slideData.image ? `<img src="${slideData.image}" alt="Checkify interface" class="slide-image">` : ''}
+        </div>
+    `;
+}
+
+        // Show first slide by default
+        showSlide(1);
+    </script>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="../static/js/jquery.min.js"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/jquery.sticky.js' %}"></script>
+        <script src="{% static 'js/click-scroll.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

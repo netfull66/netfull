@@ -23,3 +23,26 @@ def send_email(request):
         )
         return redirect('index')  # Redirect to a success page or back to the form
     return render(request, 'welcome/index.html')
+
+def discover_more(request):
+    return render(request, 'welcome/discover_more.html')
+
+
+def send_newsletter_email(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+
+        subject = "Newsletter Subscription"
+        message = f"Thank you for subscribing to our newsletter, {email}!"
+        
+        send_mail(
+            subject,
+            message,
+            settings.DEFAULT_FROM_EMAIL,
+            [email],  # Send confirmation to the subscriber
+            fail_silently=False,
+        )
+
+        return redirect('index')  # Redirect to homepage or a success page
+
+    return render(request, 'welcome/index.html')
